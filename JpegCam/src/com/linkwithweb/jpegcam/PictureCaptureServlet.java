@@ -33,7 +33,7 @@ import org.apache.commons.io.IOUtils;
  * Ashwin Kumar
  * Servlet implementation class PictureCaptureServlet  
  */
-public class PictureCaptureServlet extends HttpServlet {
+public class PictureCaptureServlet extends HttpServlet {   
 	private static final long serialVersionUID = 1L;
 	private String fileStoreURL = "";
 
