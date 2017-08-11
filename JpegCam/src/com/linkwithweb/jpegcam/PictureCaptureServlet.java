@@ -87,10 +87,10 @@ public class PictureCaptureServlet extends HttpServlet {
 			FileOutputStream fileOutputStream = new FileOutputStream(
 					fileStoreURL + "/"+"sample"+".jpg");
 			int res,bytesRead;
-			while ((res = imageToken.read()) != -1) {
+		/*	while ((res = imageToken.read()) != -1) {
 				fileOutputStream.write(res);
 				// output.write(res);
-			}
+			} */
 										    
 			/**
 			 * To make sure each url is differeent and not cached added time to tit
