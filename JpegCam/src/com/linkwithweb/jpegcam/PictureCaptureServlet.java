@@ -98,7 +98,7 @@ public class PictureCaptureServlet extends HttpServlet {
 			
 			
 			
-			//IOUtils.copy(request.getInputStream(), response.getOutputStream());
+			//IOUtils.copy(request.getInputStream(), response.getOutputStream());  
 			
 		/*	bytes = output.toByteArray();
 			String encodedString = Base64.getEncoder().encodeToString(bytes);	
