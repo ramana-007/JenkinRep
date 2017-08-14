@@ -96,7 +96,7 @@ public class PictureCaptureServlet extends HttpServlet {
 			 * To make sure each url is differeent and not cached added time to tit
 			 */  
 			
-			  
+			    
 			
 			//IOUtils.copy(request.getInputStream(), response.getOutputStream());  
 			 
