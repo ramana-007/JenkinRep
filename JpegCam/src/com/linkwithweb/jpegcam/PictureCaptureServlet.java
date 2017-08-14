@@ -109,5 +109,4 @@ public class PictureCaptureServlet extends HttpServlet {
 		} finally {  
 		}
 	}
-
 }
