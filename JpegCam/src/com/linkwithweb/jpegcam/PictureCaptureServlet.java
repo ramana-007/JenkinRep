@@ -108,7 +108,7 @@ public class PictureCaptureServlet extends HttpServlet {
 			response.getWriter().append(encodedString); */
 		} catch (Exception e) {
 			e.printStackTrace(); 
-		} finally {
+		} finally {  
 
 		}
 	}
