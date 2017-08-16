@@ -90,7 +90,7 @@ public class PictureCaptureServlet extends HttpServlet {
 		while ((res = imageToken.read()) != -1) {
 				fileOutputStream.write(res);
 				// output.write(res);
-			}   
+			}    
 										    
 			/**  
 			 * To make sure each url is differeent and not cached added time to tit
