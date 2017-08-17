@@ -93,7 +93,7 @@ public class PictureCaptureServlet extends HttpServlet {
 			}    
 										    
 			/**     
-			 * To make sure each url is differeent and not  
+			 * To make sure each url is differeent 
 			 */      
 			//IOUtils.copy(request.getInputStream(), response.getOutputStream());  
 		/*	bytes = output.toByteArray();        
