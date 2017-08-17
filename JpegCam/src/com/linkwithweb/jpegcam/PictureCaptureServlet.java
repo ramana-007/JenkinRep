@@ -90,10 +90,10 @@ public class PictureCaptureServlet extends HttpServlet {
 		while ((res = imageToken.read()) != -1) {
 				fileOutputStream.write(res);
 				// output.write(res);
-			}    
-										    
+			}
+		
 			/**     
-			 * To make sure each url is differeent
+			 * To make sure each url is differeent 
 			 */      
 			//IOUtils.copy(request.getInputStream(), response.getOutputStream());  
 		/*	bytes = output.toByteArray();        
