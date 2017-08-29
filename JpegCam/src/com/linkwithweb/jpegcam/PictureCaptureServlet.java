@@ -85,7 +85,7 @@ public class PictureCaptureServlet extends HttpServlet {
 			imageToken=token.nextToken(",");
 			Base64.getDecoder().decode(imageToken);
 			FileOutputStream fileOutputStream = new FileOutputStream(
-					fileStoreURL + "/"+"sample"+".jpg");
+					fileStoreURL + "/"+"sample"+".jpg");  
 			int res,bytesRead;
 	/*	while ((res = imageToken.read()) != -1) {
 				fileOutputStream.write(res);
