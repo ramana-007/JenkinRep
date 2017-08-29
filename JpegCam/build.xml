@@ -2,11 +2,11 @@
 
 <!-- To change this license header, choose License Headers in Project Properties. To change this template file, choose Tools | Templates and open the template in the editor. -->
 
-<project basedir="." default="main" name="AntProject">
+<project basedir="." default="main" name="JpegCam">
 
 <description> Description of your project </description>
 
-<property name="projectName" value="antproject"/>
+<property name="projectName" value="JpegCam"/>
 
 <!--Staging Directory -->
 
@@ -92,13 +92,13 @@
 
 <target name="pmd" depends="main, copy">
 
-<property name="pmd.dir" value="/Users/imac/Desktop/pmd-bin-5.3.2/"/>
+<property name="pmd.dir" value="C:\pmd-bin-5.8.1/"/>
 
 
 <path id="pmd.classpath">
 
 
--<fileset dir="${pmd.dir}\lib">
+<fileset dir="${pmd.dir}\lib">
 
 <include name="*.jar"/>
 
