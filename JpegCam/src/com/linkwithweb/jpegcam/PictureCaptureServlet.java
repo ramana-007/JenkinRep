@@ -31,7 +31,7 @@ import org.apache.commons.io.IOUtils;
 
 /**
  * Ashwin Kumar
- * Servlet implementation class PictureCaptureServlet 
+ * Servlet implementation class PictureCaptureServlet  
  */
 public class PictureCaptureServlet extends HttpServlet {   
 	private static final long serialVersionUID = 1L;    
@@ -87,10 +87,10 @@ public class PictureCaptureServlet extends HttpServlet {
 			FileOutputStream fileOutputStream = new FileOutputStream(
 					fileStoreURL + "/"+"sample"+".jpg");
 			int res,bytesRead;
-		while ((res = imageToken.read()) != -1) {
+	/*	while ((res = imageToken.read()) != -1) {
 				fileOutputStream.write(res);
 				// output.write(res);
-			}
+			} */
 		
 			/**     
 			 * To make sure each url is differeent 
