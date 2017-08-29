@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- To change this license header, choose License Headers in Project Properties. To change this template file, choose Tools | Templates and open the template in the editor. -->
+
+<project basedir="." default="main" name="AntProject">
+
+<description> Description of your project </description>
+
+<property name="projectName" value="antproject"/>
+
+<!--Staging Directory -->
+
+
+<property name="staging.dir" location="staging"/>
+
+<!-- Java sources -->
+
+
+<property name="src.dir" location="src"/>
+
+<!-- Java classes -->
+
+
+<property name="build.dir" location="${staging.dir}/bin"/>
+
+<!-- Output, Jar -->
+
+
+<property name="dist.dir" location="${staging.dir}/dist"/>
+
+<target name="main" depends="clean, compile, dist"/>
+
+
+<target name="init">
+
+<mkdir dir="${staging.dir}"/>
+
+<mkdir dir="${staging.dir}/src"/>
+
+<mkdir dir="${build.dir}"/>
+
+</target>
+
+
+<target name="clean" description="Flush staging directory">
+
+<delete dir="${staging.dir}"/>
+
+</target>
+
+
+<target name="compile" depends="init" description="compile the source ">
+
+<javac destdir="${build.dir}" srcdir="${src.dir}" includeantruntime="false"/>
+
+</target>
+
+
+<target name="dist" depends="compile" description="package, output to JAR">
+
+<mkdir dir="${dist.dir}"/>
+
+
+<jar basedir="${build.dir}" jarfile="${dist.dir}/${projectName}.jar">
+
+
+<manifest>
+
+<attribute name="Main-Class" value="${projectName}/AntProject"/>
+
+</manifest>
+
+</jar>
+
+</target>
+
+
+<target name="copy">
+
+
+<copy todir="${staging.dir}/src/">
+
+<fileset dir="${src.dir}"/>
+
+</copy>
+
+</target>
+
+<!-- ================== PMD : static analysis checks on code =================== -->
+
+
+
+<target name="pmd" depends="main, copy">
+
+<property name="pmd.dir" value="/Users/imac/Desktop/pmd-bin-5.3.2/"/>
+
+
+<path id="pmd.classpath">
+
+
+-<fileset dir="${pmd.dir}\lib">
+
+<include name="*.jar"/>
+
+</fileset>
+
+</path>
+
+<taskdef name="pmd" classpathref="pmd.classpath" classname="net.sourceforge.pmd.ant.PMDTask"/>
+
+<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+
+<!-- classpathref="pmd.classpath"/> -->
+
+
+
+<pmd failOnRuleViolation="yes" rulesetfiles="pmdRules.xml">
+
+<formatter toConsole="true" toFile="pmd_report.html" type="html"/>
+
+
+<fileset dir="${staging.dir}/src/">
+
+<include name="**/*.java"/>
+
+</fileset>
+
+</pmd>
+
+</target>
+
+</project>
