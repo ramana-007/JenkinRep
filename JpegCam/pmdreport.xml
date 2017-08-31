@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.8.1" timestamp="2017-08-31T14:24:02.911">
+<pmd version="5.8.1" timestamp="2017-08-31T14:30:38.324">
 <file name="C:\Users\IBM_ADMIN\Documents\GitHub\JenkinRep\JpegCam\src\com\linkwithweb\jpegcam\PictureCaptureServlet.java">
-<violation beginline="18" endline="18" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Import Statements" package="com.linkwithweb.jpegcam" class="PictureCaptureServlet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'java.util.Date'
-</violation>
-<violation beginline="29" endline="29" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Import Statements" package="com.linkwithweb.jpegcam" class="PictureCaptureServlet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
-Avoid unused imports such as 'org.apache.commons.io.IOUtils'
-</violation>
-<violation beginline="61" endline="63" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="com.linkwithweb.jpegcam" class="PictureCaptureServlet" method="init" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+<violation beginline="60" endline="62" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="com.linkwithweb.jpegcam" class="PictureCaptureServlet" method="init" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
 Avoid empty catch blocks
 </violation>
 </file>
