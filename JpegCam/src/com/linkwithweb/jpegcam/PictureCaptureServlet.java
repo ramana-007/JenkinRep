@@ -58,7 +58,7 @@ public class PictureCaptureServlet extends HttpServlet {
 				f.mkdirs();
 			}
 		} catch (Exception e) {
-			System.out.println("In Catch Block");
+			System.out.println("In Catch Block"); 
 		}
 	}
 
