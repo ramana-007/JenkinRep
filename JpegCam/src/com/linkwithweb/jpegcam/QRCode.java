@@ -145,7 +145,7 @@ public class QRCode {
         graphics.setColor(BackColor);
         graphics.fillRoundRect(10,10,matrixWidth-20,matrixWidth-20,5,5);
 
-    } */
+    } */ 
          
         /**
          * Call this method to create a QR-code image. You must provide the
