@@ -28,7 +28,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.IOUtils;
    
-
 /**
  * Ashwin Kumar
  * Servlet implementation class PictureCaptureServlet  
