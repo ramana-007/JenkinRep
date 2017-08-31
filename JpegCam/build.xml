@@ -116,7 +116,7 @@
 
 <pmd failOnRuleViolation="yes" rulesetfiles="pmdRules.xml">
 
-<formatter toConsole="true" toFile="pmd_report.html" type="html"/>
+<formatter toConsole="true" toFile="C:\Program Files (x86)\Jenkins\workspace\Github-Trigger-Job\JpegCam\pmdreport.xml" type="xml"/>
 
 
 <fileset dir="${src.dir}">
