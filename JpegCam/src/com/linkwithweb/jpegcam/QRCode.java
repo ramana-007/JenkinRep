@@ -14,19 +14,19 @@ import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
+//import java.io.BufferedReader;
+//import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+//import java.io.FileInputStream;
+//import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
+//import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.net.URI;
-import java.util.Collections;
+//import java.net.URI;
+//import java.util.Collections;
 import java.util.Hashtable;
-import java.util.Base64;
+//import java.util.Base64;
 import javax.imageio.ImageIO;
 
 import com.google.zxing.BarcodeFormat;
@@ -54,7 +54,7 @@ public class QRCode {
         public static void main(String[] args) {
              //   BufferedReader appInput = new BufferedReader(new InputStreamReader(System.in));
         	String header_info="BEGIN:VCARD";
-        	String version="VERSION:2.1";
+        //	String version="VERSION:2.1";
         	   //vCard format has a new line separator at the end of the code, we only need to put that later
         	String Contact_name="N:J V RamanaMurthy IBM"; //N: is the prefix for MECARD Name
         	String Contact_company="ORG:IBM"; //ORG: is the prefix for company
@@ -64,7 +64,7 @@ public class QRCode {
         	String address="ADR;TYPE=work:Mindspace";//ADR: is the prefix for address
         	String notes="NOTE:I am your collegue";//NOTE: is the prefix for notes.
         	
-        	File f = new File("C:/QRCode/profilepic.jpg");
+        	//File f = new File("C:/QRCode/profilepic.jpg");
         	try {
         /*	ByteArrayOutputStream output = new ByteArrayOutputStream();
         	FileInputStream fileIutputStream= new FileInputStream(f);
@@ -132,7 +132,7 @@ public class QRCode {
     		}
         }
         
-  private static void OuterRect(Graphics2D graphics,int matrixWidth,Color BackColor,Color LineColor)
+ /* private static void OuterRect(Graphics2D graphics,int matrixWidth,Color BackColor,Color LineColor)
     {
        // To draw Transpency
         // graphics.setComposite(makeComposite(10*0.1F));
@@ -145,7 +145,7 @@ public class QRCode {
         graphics.setColor(BackColor);
         graphics.fillRoundRect(10,10,matrixWidth-20,matrixWidth-20,5,5);
 
-    }
+    } */
          
         /**
          * Call this method to create a QR-code image. You must provide the
