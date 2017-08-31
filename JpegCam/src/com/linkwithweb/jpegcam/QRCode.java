@@ -123,7 +123,7 @@ public class QRCode {
                 try {
                         generator.getGeneratedFileStream().close();
                 } catch (IOException ignored) {
-                 //System.out.println("In Catch Block");
+                  System.out.println("In Catch Block");
                 }
         	} catch (Exception e) {
     			e.printStackTrace();
