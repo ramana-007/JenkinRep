@@ -1,3 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.8.1" timestamp="2017-08-31T14:55:08.681">
+<pmd version="5.8.1" timestamp="2017-08-31T15:28:36.987">
+<file name="C:\Users\IBM_ADMIN\Documents\GitHub\JenkinRep\JpegCam\src\com\linkwithweb\jpegcam\QRCode.java">
+<violation beginline="125" endline="127" begincolumn="19" endcolumn="17" rule="EmptyCatchBlock" ruleset="Empty Code" package="com.linkwithweb.jpegcam" class="QRCode" method="main" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
 </pmd>
