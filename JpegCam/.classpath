@@ -15,5 +15,45 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/QRCode/zxing-1.6-core.jar/zxing-1.6-core.jar"/>
 	<classpathentry kind="lib" path="C:/QRCode/zxing-1.7-javase.jar/zxing-1.7-javase.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/antlr4-runtime-4.5.2-1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/antlr-runtime-3.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/asm-5.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/groovy-2.4.7.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/gson-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/javacc-5.0.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/jaxen-1.1.6.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-apex-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-apex-5.8.1-apex-jorje-shaded.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-core-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-cpp-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-cs-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-fortran-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-go-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-groovy-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-java-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-javascript-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-jsp-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-matlab-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-objectivec-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-perl-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-php-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-plsql-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-python-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-ruby-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-scala-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-swift-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-ui-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-visualforce-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-vm-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/pmd-xml-5.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/rhino-1.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/saxon-9.1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/saxon-9.1.0.8-dom.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/scala-compiler-2.10.4.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/scala-library-2.10.4.jar"/>
+	<classpathentry kind="lib" path="C:/pmd-bin-5.8.1/lib/scala-reflect-2.10.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
