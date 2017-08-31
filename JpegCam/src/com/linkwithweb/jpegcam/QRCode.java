@@ -132,7 +132,7 @@ public class QRCode {
     		}
         }
         
- /* private static void OuterRect(Graphics2D graphics,int matrixWidth,Color BackColor,Color LineColor)
+  private static void OuterRect(Graphics2D graphics,int matrixWidth,Color BackColor,Color LineColor)
     {
        // To draw Transpency
         // graphics.setComposite(makeComposite(10*0.1F));
@@ -145,7 +145,7 @@ public class QRCode {
         graphics.setColor(BackColor);
         graphics.fillRoundRect(10,10,matrixWidth-20,matrixWidth-20,5,5);
 
-    } */
+    } 
          
         /**
          * Call this method to create a QR-code image. You must provide the
