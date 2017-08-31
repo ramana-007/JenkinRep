@@ -9,13 +9,12 @@
  */
 package com.linkwithweb.jpegcam; 
 
-import java.io.ByteArrayOutputStream;
+//import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;
+//import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Base64;
-import java.util.Date;
 import java.util.StringTokenizer;
 
 import javax.servlet.Servlet;
@@ -26,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-import org.apache.commons.io.IOUtils;
+
      
 /**
  * Ashwin Kumar
@@ -70,9 +69,9 @@ public class PictureCaptureServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		try {
 			
-			byte[] bytes;
+		//	byte[] bytes;
 			//byte[] buffer = new byte[8192];
-			ByteArrayOutputStream output = new ByteArrayOutputStream();
+		//	ByteArrayOutputStream output = new ByteArrayOutputStream();
 			System.out.println("contextPath=="+fileStoreURL);
 			
 		InputStream inputStream=request.getInputStream();
@@ -83,9 +82,9 @@ public class PictureCaptureServlet extends HttpServlet {
 		
 			imageToken=token.nextToken(",");
 			Base64.getDecoder().decode(imageToken);
-			FileOutputStream fileOutputStream = new FileOutputStream(
-					fileStoreURL + "/"+"sample"+".jpg");  
-			int res,bytesRead;
+		//	FileOutputStream fileOutputStream = new FileOutputStream(
+		//			fileStoreURL + "/"+"sample"+".jpg");  
+		//	int res,bytesRead;
 	/*	while ((res = imageToken.read()) != -1) {
 				fileOutputStream.write(res);
 				// output.write(res);

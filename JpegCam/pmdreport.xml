@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.8.1" timestamp="2017-08-31T14:15:26.166">
+<pmd version="5.8.1" timestamp="2017-08-31T14:24:02.911">
 <file name="C:\Users\IBM_ADMIN\Documents\GitHub\JenkinRep\JpegCam\src\com\linkwithweb\jpegcam\PictureCaptureServlet.java">
 <violation beginline="18" endline="18" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Import Statements" package="com.linkwithweb.jpegcam" class="PictureCaptureServlet" externalInfoUrl="https://pmd.github.io/pmd-5.8.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
 Avoid unused imports such as 'java.util.Date'
