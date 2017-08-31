@@ -107,7 +107,7 @@ public class QRCode {
                    
                 
                 while (generator.getGeneratedFileStream() == null) {
-                        try {
+                        try { 
                                // System.out.print("Enter path to generated file: ");
                               //  String input = appInput.readLine().trim();
                                 generator.setGeneratedFileStream( new FileOutputStream(
