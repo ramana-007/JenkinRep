@@ -105,7 +105,7 @@
 <property name="pmd.dir" value="C:\pmd-bin-5.8.1"/>
 
 
-<path id="pmd.classpath">
+<!-- <path id="pmd.classpath">
 
 
 <fileset dir="${pmd.dir}\lib">
@@ -114,7 +114,7 @@
 
 </fileset>
 
-</path>
+</path> -->
 
 <taskdef name="pmd" classpathref="class.path" classname="net.sourceforge.pmd.ant.PMDTask"/>
 
