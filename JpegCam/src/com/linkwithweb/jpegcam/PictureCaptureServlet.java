@@ -7,7 +7,7 @@
  *
  * @author Administrator
  */
-package com.linkwithweb.jpegcam; 
+package com.linkwithweb.jpegcam;
 
 //import java.io.ByteArrayOutputStream;
 import java.io.File;

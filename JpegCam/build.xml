@@ -24,6 +24,21 @@
 <property name="build.dir" location="${staging.dir}/bin"/>
 
 <!-- Output, Jar -->
+	<path id="class.path">
+
+	<fileset dir="C:\Program Files\Java\jre1.8.0_131\lib">
+
+	<include name="*.jar"/>
+
+	</fileset>
+
+	<fileset dir="C:\QRCode">
+
+	<include name="*.jar"/>
+
+	</fileset>
+
+	</path> 
 
 
 <property name="dist.dir" location="${staging.dir}/dist"/>
@@ -49,10 +64,11 @@
 </target>
 
 
-<target name="compile" depends="init" description="compile the source ">
+<target name="compile" depends="init" description="compile the source " >
 
-<javac destdir="${build.dir}" srcdir="${src.dir}" includeantruntime="false"/>
-
+<javac destdir="${build.dir}" srcdir="${src.dir}" includeantruntime="false">
+	 <classpath refid="class.path" />
+</javac>	
 </target>
 
 
@@ -90,7 +106,7 @@
 
 
 
-<target name="pmd" > <!-- depends="main, copy" -->
+<target name="pmd" depends="main, copy"> <!-- depends="main, copy" -->
 
 <property name="pmd.dir" value="C:\pmd-bin-5.8.1"/>
 
