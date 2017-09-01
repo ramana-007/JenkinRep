@@ -26,13 +26,7 @@
 <!-- Output, Jar -->
 	<path id="class.path">
 
-	<fileset dir="C:\Program Files\Java\jre1.8.0_131\lib">
-
-	<include name="*.jar"/>
-
-	</fileset>
-
-	<fileset dir="C:\QRCode">
+	<fileset dir="WebContent/WEB-INF/lib">
 
 	<include name="*.jar"/>
 
@@ -110,7 +104,7 @@
 
 <property name="pmd.dir" value="C:\pmd-bin-5.8.1"/>
 
-
+<!--
 <path id="pmd.classpath">
 
 
@@ -120,9 +114,9 @@
 
 </fileset>
 
-</path>
+</path> -->
 
-<taskdef name="pmd" classpathref="pmd.classpath" classname="net.sourceforge.pmd.ant.PMDTask"/>
+<taskdef name="pmd" classpathref="class.path" classname="net.sourceforge.pmd.ant.PMDTask"/>
 
 <!-- <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/> -->
 
