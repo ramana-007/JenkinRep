@@ -7,7 +7,8 @@
 <description> Description of your project </description>
 
 <property name="projectName" value="JpegCam"/>
-
+<property name="web.dir" location="WebContent"/>
+<property name="web.lib.dir" location="${web.dir}/WEB-INF/lib"/>
 <!--Staging Directory -->
 
 
@@ -26,7 +27,7 @@
 <!-- Output, Jar -->
 	<path id="class.path">
 
-	<fileset dir="WebContent/WEB-INF/lib">
+	<fileset dir="${web.lib.dir}">
 
 	<include name="*.jar"/>
 
@@ -66,24 +67,23 @@
 </target>
 
 
-<target name="dist" depends="compile" description="package, output to JAR">
-
+<!--<target name="dist" depends="compile" description="package, output to JAR">
 <mkdir dir="${dist.dir}"/>
-
-
 <jar basedir="${build.dir}" jarfile="${dist.dir}/${projectName}.jar">
-
-
 <manifest>
-
 <attribute name="Main-Class" value="${projectName}/JpegCam"/>
-
 </manifest>
-
 </jar>
+</target> -->
 
+<target name="dist" depends="compile" description="package, output to WAR">
+<mkdir dir="${dist.dir}"/>
+<war webxml="${web.dir}/WEB-INF/web.xml" destfile="${dist.dir}/${project.name}.war">
+<fileset dir="${web.dir}"/>
+<lib dir="${web.lib.dir}"/>
+<classes dir="${build.dir}"/>
+</war>
 </target>
-
 
 <target name="copy">
 
