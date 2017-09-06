@@ -87,11 +87,12 @@
 
 <target name="copy">
 
-
 <copy todir="${staging.dir}/src/">
-
 <fileset dir="${src.dir}"/>
+</copy>
 
+<copy todir="C:\Program Files (x86)\Jenkins\workspace\Github-Trigger-Job\JpegCam\dist">
+<fileset dir="${dist.dir}"/>
 </copy>
 
 </target>
