@@ -30,7 +30,7 @@ import javax.servlet.http.HttpServletResponse;
  */ 
 public class PictureCaptureServlet extends HttpServlet {   
 	private static final long serialVersionUID = 1L;    
-	private String fileStoreURL = "";
+	private String fileStoreURL = ""; 
 
 	/**
 	 * @see HttpServlet#HttpServlet()
