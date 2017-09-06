@@ -34,7 +34,7 @@ public class PictureCaptureServlet extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#HttpServlet()
-	 */
+	 */ 
 	public PictureCaptureServlet() {
 		super();
 		// TODO Auto-generated constructor stub
