@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Ashwin Kumar
  * Servlet implementation class PictureCaptureServlet
- */
+ */ 
 public class PictureCaptureServlet extends HttpServlet {   
 	private static final long serialVersionUID = 1L;    
 	private String fileStoreURL = "";
