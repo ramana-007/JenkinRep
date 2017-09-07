@@ -38,7 +38,7 @@
 
 <property name="dist.dir" location="${staging.dir}/dist"/>
 
-<target name="main" depends="clean, compile, dist"/>
+<target name="main" depends="pmd,clean, compile, dist,copy"/>
 
 
 <target name="init">
@@ -101,7 +101,7 @@
 
 
 
-<target name="pmd" depends="main, copy"> <!-- depends="main, copy" -->
+<target name="pmd" > <!-- depends="main, copy" -->
 
 <property name="pmd.dir" value="C:\pmd-bin-5.8.1"/>
 
@@ -118,11 +118,6 @@
 </path> -->
 
 <taskdef name="pmd" classpathref="class.path" classname="net.sourceforge.pmd.ant.PMDTask"/>
-
-<!-- <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/> -->
-
-<!-- classpathref="pmd.classpath"/> -->
-
 
 
 <pmd failOnRuleViolation="yes" rulesetfiles="pmdRules.xml">
