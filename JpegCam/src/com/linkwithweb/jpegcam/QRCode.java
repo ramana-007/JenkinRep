@@ -117,7 +117,7 @@ public class QRCode {
                                 System.out.println(e.getMessage());
                         }
                 }
-                 
+                
                 generator.createQrCode( final_vCard, 300, "png");
                 System.out.println("done.");
                 try {
