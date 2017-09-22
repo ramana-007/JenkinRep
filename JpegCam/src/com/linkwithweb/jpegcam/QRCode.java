@@ -101,7 +101,7 @@ public class QRCode {
                                 generator.setLogoFile( new File( "C:\\QRCode\\add.png"));
                                 System.out.println("File accepted.");
                         } catch (Exception e) {
-                                System.out.println(e.getMessage());
+                            //    System.out.println(e.getMessage());
                         }
                 }
                 
