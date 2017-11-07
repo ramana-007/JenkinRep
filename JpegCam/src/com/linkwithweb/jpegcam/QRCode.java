@@ -5,7 +5,7 @@
 package com.linkwithweb.jpegcam;
 
 /** 
- *
+ *  
  * @author Administrator
  */
   
