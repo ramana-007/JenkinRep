@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** 
- * Ashwin Kumar
+ * 
  * Servlet implementation class PictureCaptureServlet
  */ 
 public class PictureCaptureServlet extends HttpServlet {   

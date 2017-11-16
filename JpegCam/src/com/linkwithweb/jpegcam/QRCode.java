@@ -15,19 +15,20 @@ import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
-//import java.io.BufferedReader;
-//import java.io.ByteArrayOutputStream;
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
-//import java.io.FileInputStream;
-//import java.io.FileNotFoundException;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-//import java.io.InputStreamReader;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
-//import java.net.URI;
-//import java.util.Collections;
+import java.net.URI;
+import java.util.Collections;
 import java.util.Hashtable;
-//import java.util.Base64;
+import java.util.Map;
+import java.util.Base64;
 import javax.imageio.ImageIO;
 
 import com.google.zxing.BarcodeFormat;
@@ -53,21 +54,26 @@ public class QRCode {
          * @param args
          */
         public static void main(String[] args) {
+        	
+        	Hashtable<EncodeHintType, ErrorCorrectionLevel> hintMap =
+                    new Hashtable<EncodeHintType, ErrorCorrectionLevel>();
+hintMap.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+
              //   BufferedReader appInput = new BufferedReader(new InputStreamReader(System.in));
         	String header_info="BEGIN:VCARD";
         //	String version="VERSION:2.1";
         	   //vCard format has a new line separator at the end of the code, we only need to put that later
         	String Contact_name="N:J V RamanaMurthy IBM"; //N: is the prefix for MECARD Name
-        	String Contact_company="ORG:IBM"; //ORG: is the prefix for company
+        	String Contact_company="ORG:IBM India Pvt. Ltd"; //ORG: is the prefix for company
             String phone_number="TEL:7032241164";//TEL: is the prefix for telephone number
             String website="URL:--";//URL: is the prefix for website
         	String contact_email="EMAIL:vjammala@in.ibm.com";//EMAIL: is the prefix for email address
-        	String address="ADR;TYPE=work:Mindspace";//ADR: is the prefix for address
+        	String address="ADR;TYPE=work:Mindspace,3A GR Floor,HYD";//ADR: is the prefix for address
         	String notes="NOTE:I am your collegue";//NOTE: is the prefix for notes.
         	
-        	//File f = new File("C:/QRCode/profilepic.jpg");
+        	File f = new File("C:/QRCode/profilepic.jpg");
         	try {
-        /*	ByteArrayOutputStream output = new ByteArrayOutputStream();
+        	ByteArrayOutputStream output = new ByteArrayOutputStream();
         	FileInputStream fileIutputStream= new FileInputStream(f);
         	int res,bytesRead;
 			while ((res = fileIutputStream.read()) != -1) {
@@ -75,13 +81,13 @@ public class QRCode {
 			}
 			byte[] bytes = output.toByteArray();
         	
-        	String encodedString = Base64.getEncoder().encodeToString(bytes); */
+        	String encodedString = Base64.getEncoder().encodeToString(bytes); 
         	
-        	//String profilePic="PHOTO;JPEG:http://i.investopedia.com/profileimages/fa/sampleprofilerobfox14732806905259.jpg?quality=80&height=50";
-        //	System.out.println("encodedPhoto::"+profilePic);
+        	String profilePic="PHOTO;JPEG:http://i.investopedia.com/profileimages/fa/sampleprofilerobfox14732806905259.jpg?quality=80&height=50";
+        	System.out.println("encodedPhoto::"+profilePic);
         	String footer="END:VCARD";
         	//Construct one final contact string in MECARD format
-        	String final_vCard=String.format("%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s", header_info,Contact_name, Contact_company, phone_number, website,contact_email,address,notes,footer);
+        	String final_vCard=String.format("%s%n%s%n%s%n%s%n%s%n%s%n%s%n%s", header_info,Contact_name, Contact_company, phone_number, website,contact_email,address,profilePic,notes,footer);
         	System.out.println("Vcard::"+final_vCard);
                // String data = "ramana murthy, how r u man?";
               //  System.out.print("Please enter data to encode: ");
@@ -126,6 +132,11 @@ public class QRCode {
                 } catch (IOException ignored) {
                   System.out.println("In Catch Block");
                 }
+                
+                BufferedImage image=ImageIO.read( new File("C:\\QRCode\\QRCode.jpg"));
+                Result qrResult= generator.decode(image, hintMap);
+                
+                System.out.println("Decoded QR Code Image data------>"+qrResult.getText());
         	} catch (Exception e) {
     			e.printStackTrace();
     		} finally {
@@ -326,4 +337,5 @@ public class QRCode {
                 this.logoFile = logoFile;
         }
         
+       
 }
