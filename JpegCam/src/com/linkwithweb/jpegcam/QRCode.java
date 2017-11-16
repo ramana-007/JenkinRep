@@ -6,7 +6,7 @@ package com.linkwithweb.jpegcam;
 
 /**
  *
- * @author Administrator 
+ * @author Administrator  
  */
   
 import java.awt.Color;
